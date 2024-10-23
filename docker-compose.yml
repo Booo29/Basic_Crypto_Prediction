@@ -1,0 +1,9 @@
+version: '3.7'
+services:
+  prediction_crypto:
+    build: .
+    container_name: prediction_crypto
+    image: prediction_crypto_image
+    volumes:
+      - .:/app
+    command: ["python", "prediction_crypto.py"]
